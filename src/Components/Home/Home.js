@@ -1,40 +1,13 @@
+import { Link } from 'react-router-dom'
 import HomeCSS from './Home.module.css'
 
 export default function Home() {
   return (
     <div className={HomeCSS.container}>
-        <article className={HomeCSS.containerItem}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta qui a laudantium exercitationem repudiandae dolore
-            voluptate nobis recusandae? Unde repudiandae dolores nemo
-            saepe fugit aliquam nihil voluptatem quaerat voluptate sint.
-          </p>
-        </article>
-        <article className={HomeCSS.containerItem}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta qui a laudantium exercitationem repudiandae dolore
-            voluptate nobis recusandae? Unde repudiandae dolores nemo
-            saepe fugit aliquam nihil voluptatem quaerat voluptate sint.
-          </p>
-        </article>
-        <article className={HomeCSS.containerItem}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta qui a laudantium exercitationem repudiandae dolore
-            voluptate nobis recusandae? Unde repudiandae dolores nemo
-            saepe fugit aliquam nihil voluptatem quaerat voluptate sint.
-          </p>
-        </article>
-        <article className={HomeCSS.containerItem}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Dicta qui a laudantium exercitationem repudiandae dolore
-            voluptate nobis recusandae? Unde repudiandae dolores nemo
-            saepe fugit aliquam nihil voluptatem quaerat voluptate sint.
-          </p>
-        </article>
+      <div className={HomeCSS.containerItem}>
+        <h1>Welcome</h1>
+        <h3><Link to="/v1" >visualizations here</Link></h3>
       </div>
+    </div>
   )
 }
